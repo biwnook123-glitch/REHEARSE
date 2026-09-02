@@ -1,0 +1,41 @@
+{
+  "name": "rehearse",
+  "version": "0.1.0",
+  "description": "Local-first event flow simulator that turns source materials into traceable what-if rehearsals.",
+  "private": true,
+  "license": "Apache-2.0",
+  "keywords": [
+    "event-operations",
+    "tabletop-exercise",
+    "run-of-show",
+    "event-rehearsal",
+    "local-first"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/prepare-sites-build.mjs",
+    "evaluate": "node scripts/evaluate-fixtures.mjs",
+    "evaluate:json": "node scripts/evaluate-fixtures.mjs --json",
+    "preview": "vite preview",
+    "test": "node --test --test-isolation=none tests/*.test.mjs",
+    "test:engine": "node --test --test-isolation=none tests/event-engine.test.mjs tests/project-ops.test.mjs",
+    "test:sites": "node --test --test-isolation=none tests/sites-worker.test.mjs",
+    "check": "npm run evaluate && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "@vitejs/plugin-react": "6.1.1",
+    "ajv": "8.20.0",
+    "mammoth": "^1.12.2",
+    "pdfjs-dist": "^6.3.289",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "vite": "8.2.2",
+    "wavesurfer.js": "^7.12.11",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  }
+}

@@ -1,0 +1,26 @@
+name: Event fixture or parser gap
+description: Propose a shareable minimal material structure the engine should understand
+title: "[Fixture]: "
+labels: [fixture]
+body:
+  - type: dropdown
+    id: event_type
+    attributes:
+      label: Event type
+      options: [Conference, Product launch, Public activation, Training, Livestream or hybrid, Multi-track, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: structure
+    attributes:
+      label: Material structure
+      description: Describe sheets, columns or sections. Use synthetic values and do not include private source content.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected event model
+      description: Which moments, dimensions, dependencies or risks should be produced?
+    validations:
+      required: true

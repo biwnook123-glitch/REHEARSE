@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+coverage/
+qa-v0.1/
+audit-*/
+design-comparison-*.jpg
+implementation-*.jpg
+implementation-*.png
+design-reference.png
+design-qa.md
