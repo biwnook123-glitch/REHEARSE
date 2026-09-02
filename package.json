@@ -21,9 +21,9 @@
     "evaluate": "node scripts/evaluate-fixtures.mjs",
     "evaluate:json": "node scripts/evaluate-fixtures.mjs --json",
     "preview": "vite preview",
-    "test": "node --test --test-isolation=none tests/*.test.mjs",
-    "test:engine": "node --test --test-isolation=none tests/event-engine.test.mjs tests/project-ops.test.mjs",
-    "test:sites": "node --test --test-isolation=none tests/sites-worker.test.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:engine": "node --test tests/event-engine.test.mjs tests/project-ops.test.mjs",
+    "test:sites": "node --test tests/sites-worker.test.mjs",
     "check": "npm run evaluate && npm run test && npm run build"
   },
   "dependencies": {
