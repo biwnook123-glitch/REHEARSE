@@ -32,7 +32,7 @@ function Sidebar({ view, setView, onNew, project, projects, onSwitch }) {
     ['audio', Headphones, '联排与校时'], ['risks', ListChecks, '验证记录'],
   ];
   return <aside className="sidebar">
-    <div className="brand"><span className="brand-mark">R</span><div><strong>REHEARSE</strong><small>活动数字演练室</small></div></div>
+    <div className="brand"><span className="brand-mark">R</span><div><strong>REHEARSE</strong><small>活动彩排引擎</small></div></div>
     <button className="new-project" onClick={onNew}><Plus size={17} /> <span>新建活动</span></button>
     <label className="project-switcher"><span>当前项目</span><select value={project.id} onChange={(event) => onSwitch(event.target.value)}>{projects.map((item) => <option value={item.id} key={item.id}>{item.title}</option>)}</select></label>
     <nav>{nav.map(([key, Icon, label]) => { const active = view === key || (key === 'simulation' && view === 'map'); return <button key={key} aria-current={active ? 'page' : undefined} className={active ? 'active' : ''} onClick={() => setView(key)}><AppIcon Icon={Icon} /><span>{label}</span>{key === 'risks' && <em>{flowRisks(project).filter((risk) => !risk.closed).length}</em>}</button>; })}</nav>

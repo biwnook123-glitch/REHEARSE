@@ -1,14 +1,18 @@
 {
   "name": "rehearse",
   "version": "0.1.0",
-  "description": "Local-first event flow simulator that turns source materials into traceable what-if rehearsals.",
+  "description": "活动开场前，先把意外演一遍。A local-first rehearsal engine for run-of-show simulation, timing checks and cue rehearsals.",
   "private": true,
   "license": "Apache-2.0",
   "keywords": [
     "event-operations",
+    "event-production",
+    "event-planning",
     "tabletop-exercise",
     "run-of-show",
     "event-rehearsal",
+    "scenario-simulation",
+    "cue-sheet",
     "local-first"
   ],
   "engines": {

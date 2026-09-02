@@ -1,10 +1,20 @@
-# REHEARSE
+# REHEARSE · 活动彩排引擎
 
-把静态活动材料变成一个可以注入变化、观察连锁影响并真实联排的流程模拟器。
+**活动开场前，先把意外演一遍。**<br>
+**Rehearse the event before the venue does.**
 
-REHEARSE（活动数字演练室）读取团队手边已有的流程表、Cue表、讲稿和技术材料，把它们编译成同一条活动时间线。用户可以注入“环节延迟、设备失效、版本差异、动线受阻”等变化，比较顺延后续、守住原时刻或压缩当前环节时会发生什么，再把选中的方案带入真人联排。它不负责现场播控，也不要求团队迁移到一套新任务系统。
+[![CI](https://github.com/biwnook123-glitch/REHEARSE/actions/workflows/ci.yml/badge.svg)](https://github.com/biwnook123-glitch/REHEARSE/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/biwnook123-glitch/REHEARSE/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/biwnook123-glitch/REHEARSE/security/code-scanning)
+[![Release](https://img.shields.io/github/v/release/biwnook123-glitch/REHEARSE?include_prereleases)](https://github.com/biwnook123-glitch/REHEARSE/releases/tag/v0.1.0)
+[![License](https://img.shields.io/github/license/biwnook123-glitch/REHEARSE)](LICENSE)
 
-> **项目状态：v0.1.0 public-preview candidate。** 核心流程、导入导出和确定性回归基准已可复验，CI 与 Docker 检查已配置；它不是现场播控系统，也不对任意生产文档作 100% 识别承诺。
+把流程表、Cue 表、讲稿和技术说明放进来，试演一次延迟、设备故障、版本冲突或动线受阻，马上看到它会把后面的哪些环节推乱。REHEARSE 还能核对讲稿时长、比较应对方案，并把真人联排结果留在同一条证据链里。
+
+REHEARSE is a local-first event rehearsal engine for event producers, brand teams, agencies, stage crews and livestream operators. It turns run-of-show sheets, cue sheets, scripts and technical notes into a traceable timeline, then simulates delays, equipment failures, blocked routes and version conflicts before doors open.
+
+**[下载 v0.1.0](https://github.com/biwnook123-glitch/REHEARSE/releases/tag/v0.1.0) · [60 秒启动](#60-秒试用) · [20 分钟演示脚本](docs/DEMO_SCRIPT.md)**
+
+> v0.1.0 是可运行的公开预览版。核心流程、导入导出、CI 与 Docker 构建均已验证；它不是现场播控系统，也不承诺自动读懂每一种生产文档。
 
 ![REHEARSE 流程模拟](docs/images/flow-simulation.jpg)
 
