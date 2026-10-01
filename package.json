@@ -36,7 +36,7 @@
     "ajv": "8.20.0",
     "mammoth": "^1.12.2",
     "pdfjs-dist": "^6.3.289",
-    "react": "19.2.8",
+    "react": "19.3.0",
     "react-dom": "19.2.8",
     "vite": "8.2.2",
     "wavesurfer.js": "^7.12.11",
